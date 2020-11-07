@@ -1,6 +1,9 @@
 package com.date;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class BigDecimalDemo {
     public static void main(String[] args) {
@@ -9,6 +12,12 @@ public class BigDecimalDemo {
         BigDecimalDemo decimalDemo = new BigDecimalDemo();
         decimalDemo.plus(2.3,4.4);
 //        BigDecimal.valueOf(22.44);
+        Thread thread = new Thread(){
+            @Override
+            public void run() {
+                super.run();
+            }
+        };
 
     }
     public void plus(double a,double b){
@@ -27,5 +36,7 @@ public class BigDecimalDemo {
         System.out.println(cc);
         BigDecimal dc = ab.divide(bb,2,BigDecimal.ROUND_HALF_UP);
         System.out.println(dc);
+        List list = new ArrayList<>();
+
      }
 }
